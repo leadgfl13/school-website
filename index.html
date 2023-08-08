@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="mainpage" id = 'mainpage'>
+        <div class="maintitle">Leader Biology</div>    
+        <ul class = 'unitlist'>
+            <li class = "unit1" id = "unit1">Unit1</li>
+            <li class = "unit2" id = "unit2">Unit 2</li>
+            <li class = "unit3" id = "unit3">Unit 3</li>
+            <li class = "unit4" id = "unit4">Unit 4</li>
+        </ul>
+    </div>
 
-    <h3>Leader Biology</h3>
-    
 </body>
+
+<script>
+
+    const dude = document.getElementById('unit1')
+    dude.addEventListener('mouseover',(event) => {
+        let mainpage =document.getElementById('mainpage')
+        let unit1card= document.createElement('div')
+        unit1card.setAttribute('id', 'unitcard')
+        let notes = document.createElement('div')
+        notes.setAttribute('id', 'notes')
+        notes.innerHTML= "Notes"
+        let other =document.createElement('div')
+        other.innerHTML= "other"
+        other.setAttribute('id', 'other')
+        mainpage.append(unit1card)
+        unit1card.append(notes)
+        unit1card.append(other)
+    })
+
+   
+</script>
 </html>

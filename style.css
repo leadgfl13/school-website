@@ -1,4 +1,34 @@
 body{
     margin:0px;
-    background-color:forestgreen;
+    
+}
+
+.mainpage{
+    display:flex;
+    height:100vh;
+    width:100vw;
+    flex-direction:column;
+    justify-content:center;
+    align-items:Center;
+    background-color:rgb(74, 106, 74)
+}
+
+
+.maintitle{
+    font-size:54px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.unitlist{
+    width:100%;
+    display:flex;
+    gap:40px;
+    justify-content:center;
+
+}
+
+.unit4:focus{
+    background-color:blue;
+
 }
